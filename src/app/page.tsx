@@ -1,10 +1,12 @@
 import Link from "next/link";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import DebugLogger from "@/components/DebugLogger";
 
 export default function Home() {
   return (
     <>
+      <DebugLogger />
       <Nav />
       <main className="flex flex-col min-h-screen">
 
