@@ -1,5 +1,6 @@
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import PlaceholderTile from "@/components/PlaceholderTile";
 
 const categories = [
   {
@@ -72,11 +73,7 @@ export default function Work() {
                 {cat.projects.map((p) => (
                   <div key={p.id} className="group cursor-pointer">
                     {/* Placeholder tile — replace with <Image> when assets arrive */}
-                    <div className="aspect-[3/4] bg-rule/40 border border-rule group-hover:bg-rule/70 transition-colors flex items-end p-3">
-                      <span className="font-sans text-[10px] tracking-[0.2em] uppercase text-muted/50 group-hover:text-muted transition-colors">
-                        {p.id}
-                      </span>
-                    </div>
+                    <PlaceholderTile id={p.id} />
                     <div className="mt-3 space-y-0.5">
                       <p className="font-sans text-xs tracking-wide text-ink">{p.title}</p>
                       <p className="font-sans text-[11px] text-muted">{p.client}</p>
